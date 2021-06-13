@@ -10,6 +10,7 @@
     .AddList {
         font-size: large;
         list-style-type: "📌";
+        width: 300px;
     }
     
     .AlramTarget {
