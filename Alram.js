@@ -33,13 +33,17 @@ matchingTime: () => {
                 listCollection.forEach(list=>{                    
                     if(list.firstChild.data ==el.title){
                         list.classList.add("AlramTarget");
-                        NewWindow=window.open("", "", "width=300, height=300,location=no",);
+                        NewWindow=window.open("", "", "width=412, height=300,location=no",);
                         NewWindow.document.body.style.backgroundColor="green";
                         NewWindow.document.body.style.color="white";
                         
+                        Name= NewWindow.document.createElement("h3");
+                        Name.innerText= `😀${nickName}님, 설정하신 알람을 확인해주세요.❗`;
+                        NewWindow.document.body.appendChild(Name); 
+
                         AlramList =NewWindow.document.createElement("ul");
                         NewWindow.document.body.appendChild(AlramList);
-    
+                        
                         test = NewWindow.document.createElement("li");
                         test.style.fontSize="large";
                         test.innerText=`❗${list.firstChild.data}
@@ -192,7 +196,7 @@ let AlramArrData = [];
 
 LoadAlram.Handler();
 
-Alram.AlramHadler();
+
 setInterval(Alram.AlramHadler, 1000 * 60);
 
 document.querySelector(".SetBtn").addEventListener("click", setBtn.Handler);
