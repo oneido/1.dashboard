@@ -63,16 +63,32 @@ matchingTime: () => {
 const setBtn={
 
 Handler:()=>{
- 
-    const Obj = setBtn.createAlram();
-    setBtn.saveAlramData();
-    const targetArea =document.querySelector(".AlramList");
-    setBtn.createAlramEle(Obj.title,Obj.setTime,targetArea,DelBtn.Handler);
-    document.querySelector(".AlramTime").value="";
-    document.querySelector(".AlramTitle").value="";
-    
 
-    console.log(parseInt(Obj.setTime));
+    
+    const Obj = setBtn.createAlram();
+    if(Obj.setTime==Alram.nowTime()){
+
+        alert("현재 시간으로 설정할 수 없습니다.");
+        document.querySelector(".AlramTime").value="";
+        document.querySelector(".AlramTitle").value="";
+
+    }else{
+        
+        setBtn.saveAlramData();
+        const targetArea =document.querySelector(".AlramList");
+        setBtn.createAlramEle(Obj.title,Obj.setTime,targetArea,DelBtn.Handler);
+        /* nowdata = new Date();
+        setdata =document.querySelector(".AlramTime").valueAsNumber
+    
+        setTimeout(,setdata-(nowdata.getMinutes()*1000*60)); */
+        
+        document.querySelector(".AlramTime").value="";
+        document.querySelector(".AlramTitle").value="";
+        
+    }   
+    
+    
+  
     
 },
 
@@ -132,8 +148,6 @@ deleteEle:(event)=>{
 },
 
 deleteData:(event)=>{
-    console.log("delteData");
-    console.log(AlramArrData);
     const delTarget= event.target.parentElement;
     AlramArrData =AlramArrData.filter(el=>{
        return  delTarget.firstChild.data !==el.title;
