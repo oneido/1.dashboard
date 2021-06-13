@@ -48,6 +48,6 @@
     }
     
     .AlramBtn {
-        position: absolute;
-        right: -41px;
+        position: relative;
+        right: -3px;
     }
