@@ -100,7 +100,7 @@ saveAlramData: () => {
 createAlramEle:(text,time,targetArea,DelBtnEvent)=>{
     List=document.createElement("li");
     List.innerText= `${text}`;
-    List.classList.add(".AddList");
+    List.classList.add("AddList");
     targetArea.appendChild(List);
 
     TimeSpan= document.createElement("span");

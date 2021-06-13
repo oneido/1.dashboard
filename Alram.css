@@ -27,7 +27,7 @@
     .AlramList {
         position: absolute;
         top: 0vh;
-        right: 5vw;
+        right: -1vw;
     }
     
     .SetBtn {
