@@ -33,33 +33,33 @@ function getWeather(lat, lon) {
                 case "Rain":
 
                     document.querySelector(".timeNow").innerText = new Date();
-                    document.querySelector(".notaion").innerText = "☔비가 내립니다. 🌂우산을 챙기세요!🌂";
+                    document.querySelector(".notaion").innerText = `💖${nickName}💖님, ` + "☔비가 내립니다. 🌂우산을 챙기세요!🌂";
                     OldClass = document.querySelector("body").className;
                     document.querySelector("body").classList.replace(OldClass, "rain");
                     break;
                 case "Mist":
                     document.querySelector(".timeNow").innerText = new Date();
-                    document.querySelector(".notaion").innerText = "💧안개가 꼈습니다.";
+                    document.querySelector(".notaion").innerText = `💖${nickName}💖님, ` + "💧안개가 꼈습니다.";
                     OldClass = document.querySelector("body").className;
                     document.querySelector("body").classList.replace(OldClass, "mist");
                     break;
                 case "Clouds":
                     document.querySelector(".timeNow").innerText = new Date();
-                    document.querySelector(".notaion").innerText = "☁️구름이 있습니다.";
+                    document.querySelector(".notaion").innerText = `💖${nickName}💖님, ` + "☁️구름이 있습니다.";
                     OldClass = document.querySelector("body").className;
                     document.querySelector("body").classList.replace(OldClass, "cloud");
                     break;
 
                 case "Drizzle":
                     document.querySelector(".timeNow").innerText = new Date();
-                    document.querySelector(".notaion").innerText = "☔ 이슬비가 내립니다. 🌂우산을 챙기세요!🌂";
+                    document.querySelector(".notaion").innerText = `💖${nickName}💖님 ` + "☔ 이슬비가 내립니다. 🌂우산을 챙기세요!🌂";
                     OldClass = document.querySelector("body").className;
                     document.querySelector("body").classList.replace("OldClass,drizzle");
                     break;
 
                 case "Clear":
                     document.querySelector(".timeNow").innerText = new Date();
-                    document.querySelector(".notaion").innerText = "😀 맑은 하늘입니다.🌞";
+                    document.querySelector(".notaion").innerText = `💖${nickName}💖님 ` + "😀 맑은 하늘입니다.🌞";
                     OldClass = document.querySelector("body").className;
                     document.querySelector("body").classList.replace(OldClass, "clear");
                     break;
@@ -68,6 +68,21 @@ function getWeather(lat, lon) {
 
 
         })
+}
+
+let nickName;
+
+if (localStorage.getItem("nickName") === null) {
+
+    nickName = prompt("이름을 입력하세요.");
+
+    localStorage.setItem("nickName", JSON.stringify(nickName));
+
+    nickName = JSON.parse(localStorage.getItem("nickName"));
+
+} else {
+
+    nickName = JSON.parse(localStorage.getItem("nickName"));
 }
 
 function test() {
