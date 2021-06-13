@@ -71,6 +71,9 @@ Handler:()=>{
     document.querySelector(".AlramTime").value="";
     document.querySelector(".AlramTitle").value="";
     
+
+    console.log(parseInt(Obj.setTime));
+    
 },
 
 createAlram: () => {
@@ -175,7 +178,7 @@ let AlramArrData = [];
 
 LoadAlram.Handler();
 
-
+Alram.AlramHadler();
 setInterval(Alram.AlramHadler, 1000 * 60);
 
 document.querySelector(".SetBtn").addEventListener("click", setBtn.Handler);
