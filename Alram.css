@@ -46,3 +46,7 @@
         position: relative;
         top: -40px;
     }
+    
+    .AlramBtn {
+        position: absolute;
+    }
