@@ -54,7 +54,7 @@ function getWeather(lat, lon) {
                     document.querySelector(".timeNow").innerText = new Date();
                     document.querySelector(".notaion").innerText = `💖${nickName}💖님 ` + "☔ 이슬비가 내립니다. 🌂우산을 챙기세요!🌂";
                     OldClass = document.querySelector("body").className;
-                    document.querySelector("body").classList.replace("OldClass,drizzle");
+                    document.querySelector("body").classList.replace(OldClass, "OldClass,drizzle");
                     break;
 
                 case "Clear":
