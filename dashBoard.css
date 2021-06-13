@@ -5,9 +5,7 @@
 }
 
 #data {
-    /* background-image: url("https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649__340.jpg");
-    background-size: cover; */
-    width: 30vw;
+    width: 50vw;
     height: 200px;
     color: rgb(255, 255, 255);
     font-size: 15px;
