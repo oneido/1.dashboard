@@ -19,9 +19,15 @@
     }
     
     .js-AlramContainer {
-        position: relative;
-        top: -62vh;
-        right: -56vw;
+        position: absolute;
+        top: 41vh;
+        right: 34vw;
+    }
+    
+    .AlramList {
+        position: absolute;
+        top: 0vh;
+        right: 6vw;
     }
     
     .SetBtn {
