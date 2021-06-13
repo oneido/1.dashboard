@@ -6,7 +6,7 @@
         background-color: red;
     }
     
-    .AlramContainer>li {
+    .AlramContainer>li .AddList {
         font-size: large;
         list-style-type: "📌";
     }
@@ -49,4 +49,5 @@
     
     .AlramBtn {
         position: absolute;
+        right: -38px;
     }
