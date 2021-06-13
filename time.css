@@ -1,0 +1,13 @@
+.TimeContainer {
+    position: relative;
+    top: -58vh;
+    right: -55vw;
+    font-size: 43pt;
+    margin: 0px;
+}
+
+.Time {
+    position: relative;
+    top: -3vh;
+    right: -0.4vw;
+}

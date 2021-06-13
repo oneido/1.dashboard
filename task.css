@@ -1,0 +1,23 @@
+#task {
+    position: relative;
+    top: -284px;
+    right: -7px;
+}
+
+li {
+    color: whitesmoke;
+    font-size: large;
+}
+
+h1,
+h2,
+Label {
+    color: black;
+    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
+}
+
+button {
+    position: relative;
+    right: -4px;
+    top: -2px;
+}

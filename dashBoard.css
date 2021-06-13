@@ -1,0 +1,55 @@
+#board {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 93vh;
+}
+
+#data {
+    /* background-image: url("https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649__340.jpg");
+    background-size: cover; */
+    width: 30vw;
+    height: 200px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+#icon {
+    position: relative;
+    top: -188px;
+    right: 6px;
+}
+
+.notaion {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -94px;
+    right: -99px;
+}
+
+.timeNow {
+    color: rgb(255, 255, 255);
+    position: relative;
+    position: relative;
+    top: -108px;
+    right: -104px;
+}
+
+.rain {
+    background-image: url("https://cdn.pixabay.com/photo/2013/02/21/19/11/rain-84648__340.jpg");
+    background-size: cover;
+}
+
+.cloud {
+    background-image: url("https://cdn.pixabay.com/photo/2021/06/10/07/40/buildings-6325228__340.jpg");
+    background-size: cover;
+}
+
+.drizzle {
+    background-image: url("https://cdn.pixabay.com/photo/2020/06/21/13/52/fog-5324928__340.jpg");
+    background-size: cover;
+}
+
+.clear {
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/27/19/10/boat-863129__340.jpg");
+    background-size: cover;
+}

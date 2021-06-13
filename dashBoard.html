@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dashBoard.js" defer></script>
+    <script src="taskBoard.js" defer></script>
+    <script src="time.js" defer></script>
+    <script src="Alram.js" defer></script>
+
+    <link rel="stylesheet" href="dashBoard.css">
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="time.css">
+    <link rel="stylesheet" href="Alram.css">
+
+    <title>대시보드</title>
+
+</head>
+
+<body>
+    <div id="board">
+        <div id="weatherContainer">
+            <div id="data">
+                <h2 class="data"></h2>
+            </div>
+
+            <div id="icon">
+                <img class="icon" src="" />
+                <p class="notaion"></p>
+                <p class="timeNow"></p>
+
+            </div>
+        </div>
+
+        <div id="task">
+            <h1>Task Board</h1>
+            <div class="js-TaskBox TaskBox">
+                <h2>Add Task</h2>
+
+                <input id="AddTask" class="js-Task Task " type="text" value="" placeholder="Add Task">
+            </div>
+
+            <div class="js-PendingBox PendingBox">
+                <h2>Pending List</h2>
+                <ul class="js-Pending-ul">
+
+                </ul>
+            </div>
+
+            <div class="js-FinishBox FinishBox">
+                <h2>Finish List</h2>
+                <ul class="js-Finish-ul">
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="js-TimeContainer TimeContainer">
+            <h2 class="js-Time Time"></h2>
+        </div>
+
+        <div class="js-AlramContainer AlramContainer">
+            <input type="text" name="" id="" class="AlramTitle">
+            <input type="time" name="" id="" class="AlramTime">
+            <button type="submit" class="SetBtn">📌</button>
+            <ul class="AlramList">
+
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

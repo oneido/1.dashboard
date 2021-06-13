@@ -1,0 +1,42 @@
+    .Hours {
+        background-color: red;
+    }
+    
+    .Minutes {
+        background-color: red;
+    }
+    
+    .AlramContainer>li {
+        font-size: large;
+        list-style-type: "📌";
+    }
+    
+    .AlramTarget {
+        font-weight: bold;
+        color: rgb(231, 40, 40);
+        text-decoration: line-through;
+        list-style-type: "📌";
+    }
+    
+    .js-AlramContainer {
+        position: relative;
+        top: -62vh;
+        right: -56vw;
+    }
+    
+    .SetBtn {
+        position: relative;
+        right: -6px;
+        top: -40px;
+    }
+    
+    .AlramTitle {
+        position: relative;
+        right: 7px;
+        top: -40px;
+    }
+    
+    .AlramTime {
+        position: relative;
+        top: -40px;
+    }
