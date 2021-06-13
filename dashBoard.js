@@ -74,4 +74,4 @@ function test() {
     navigator.geolocation.getCurrentPosition(success, error, options);
 }
 navigator.geolocation.getCurrentPosition(success, error, options);
-setInterval(test, 6000);
+setInterval(test, 1000 * 60 * 15);
