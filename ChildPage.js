@@ -18,7 +18,7 @@ function receiveMessage(message) {
 
 window.addEventListener("load", () => {
 
-    window.opener.postMessage("데이터를 내 놓거라", "*");
+    window.opener.postMessage("데이터를 내 놓거라", "https://oneido.github.io");
 
 });
 
