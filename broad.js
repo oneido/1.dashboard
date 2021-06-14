@@ -2,7 +2,7 @@ const broad = {
 
     receiveMessage: (message) => {
 
-        NewWindow.postMessage(JSON.stringify(obj), "*");
+        NewWindow.postMessage(JSON.stringify(obj), "https://oneido.github.io");
 
     }
 
