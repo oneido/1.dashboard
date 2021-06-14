@@ -216,7 +216,7 @@ let AlramObj;
 let AlramArrData = [];
 let TestName;
 TestName = `😀${nickName}님, 설정하신 알람을 확인해주세요.❗`;
- obj = [TestName];
+let obj = [TestName];
 
 LoadAlram.Handler();
 
