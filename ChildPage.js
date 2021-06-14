@@ -1,6 +1,6 @@
 function receiveMessage(message) {
-    if (message.origin == "null") {
-
+    if (message.origin == "https://oneido.github.io") {
+        
         console.log(JSON.parse(message.data));
         [name, ...list] = JSON.parse(message.data);
         document.querySelector(".UserName").innerText = name;
@@ -11,12 +11,14 @@ function receiveMessage(message) {
             document.querySelector(".ListBoard").appendChild(List);
         }
 
+    }else{
+    console.log(message.origin);
     }
 }
 
 window.addEventListener("load", () => {
 
-    window.opener.postMessage("데이터를 내 놓거라", "*");
+    window.opener.postMessage("데이터를 내 놓거라", "https://oneido.github.io");
 
 });
 

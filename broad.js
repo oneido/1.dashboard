@@ -1,9 +1,9 @@
 const broad = {
 
     receiveMessage: (message) => {
-
-        NewWindow.postMessage(JSON.stringify(obj), "*");
-
+            if(message.origin=="https://oneido.github.io"){
+        NewWindow.postMessage(JSON.stringify(obj), "https://oneido.github.io");
+            }
     }
 
 }
