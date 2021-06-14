@@ -1,0 +1,24 @@
+body {
+    background-color: green;
+}
+
+.ListBoard {
+    margin-bottom: 125px;
+}
+
+.ListBoard>li {
+    font-size: large;
+    list-style-type: "📌";
+    color: whitesmoke;
+}
+
+.UserName {
+    color: whitesmoke;
+    animation: blinker 0.9s step-start infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

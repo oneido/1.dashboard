@@ -21,6 +21,7 @@ getAlramData: () => {
     return calledData;
 },
 
+                        
 matchingTime: () => {
 
     if(Alram.getAlramData()!==null){
@@ -33,8 +34,17 @@ matchingTime: () => {
                 listCollection.forEach(list=>{                    
                     if(list.firstChild.data ==el.title){
                         list.classList.add("AlramTarget");
-                        NewWindow=window.open("", "", "width=412, height=300,location=no",);
-                        NewWindow.document.body.style.backgroundColor="green";
+                        NewWindow=window.open("ChildPage.html", "", "width=412, height=300,location=no",);
+                        TestName = `😀${nickName}님, 설정하신 알람을 확인해주세요.❗`;
+                        obj = [TestName];
+                        obj.push(`${list.firstChild.data} ${list.childNodes[1].innerText}`);
+
+
+
+
+                        
+                        
+                       /*  NewWindow.document.body.style.backgroundColor="green";
                         NewWindow.document.body.style.color="white";
                         
                         Name= NewWindow.document.createElement("h3");
@@ -49,7 +59,7 @@ matchingTime: () => {
                         test.innerText=`❗${list.firstChild.data}
                         ${list.childNodes[1].innerText}`;
                         AlramList.appendChild(test); 
-                        console.log("알람창이 나타납니다.");
+                        console.log("알람창이 나타납니다."); */
                     }
                 });
 
@@ -192,7 +202,8 @@ settingData:(AlramArrData)=>{
 
 let AlramObj;
 let AlramArrData = [];
-
+let TestName;
+let obj;
 
 LoadAlram.Handler();
 
