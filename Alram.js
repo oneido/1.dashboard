@@ -30,20 +30,23 @@ matchingTime: () => {
         setTime.forEach(el => {  
             if(el.setTime==Alram.nowTime()){
                 console.log("Alram!!");
+        
                 listCollection = document.querySelectorAll("li");
                 listCollection.forEach(list=>{                    
                     if(list.firstChild.data ==el.title){
                         list.classList.add("AlramTarget");
-                        NewWindow=window.open("ChildPage.html", "", "width=412, height=300,location=no",);
-                        TestName = `😀${nickName}님, 설정하신 알람을 확인해주세요.❗`;
-                        obj = [TestName];
+
                         obj.push(`${list.firstChild.data} ${list.childNodes[1].innerText}`);
+                        console.log(obj.length);
 
 
+                        if(obj.length==listCollection.length+1){
+                            console.log(obj.length);
+                            Alram.broad();
+                        }else{
+                            console.log(obj.length);
+                        }
 
-
-                        
-                        
                        /*  NewWindow.document.body.style.backgroundColor="green";
                         NewWindow.document.body.style.color="white";
                         
@@ -62,17 +65,26 @@ matchingTime: () => {
                         console.log("알람창이 나타납니다."); */
                     }
                 });
-
-               
             }
             else{
                 console.log("no Alram");
             }
-        });  
+            return obj;
+        }); 
     }
+
+    
 },
 
+ broad:()=>{
+    console.log(obj);
+    NewWindow=window.open("ChildPage.html", "", "width=412, height=300,location=no",); 
+
 }
+    
+
+}
+
 
 const setBtn={
 
@@ -203,7 +215,8 @@ settingData:(AlramArrData)=>{
 let AlramObj;
 let AlramArrData = [];
 let TestName;
-let obj;
+TestName = `😀${nickName}님, 설정하신 알람을 확인해주세요.❗`;
+ obj = [TestName];
 
 LoadAlram.Handler();
 
