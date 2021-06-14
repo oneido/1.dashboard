@@ -1,5 +1,5 @@
 function receiveMessage(message) {
-    if (message.origin == "https://oneido.github.io/1.dashboard/dashBoard.html") {
+    if (message.origin == "https://oneido.github.io") {
         
         console.log(JSON.parse(message.data));
         [name, ...list] = JSON.parse(message.data);
