@@ -21,12 +21,12 @@
     }
     
     .js-AlramContainer {
+        /* border: solid Red 3px; */
         position: absolute;
-        top: 41vh;
-        right: 34vw;
+        top: 300px;
+        left: 512px;
     }
-    
-    .AlramList {
+    /*    .AlramList {
         position: absolute;
         top: 0vh;
         right: -1vw;
@@ -43,13 +43,32 @@
         right: 7px;
         top: -40px;
     }
-    
-    .AlramTime {
+     */
+    /*  .AlramTime {
         position: relative;
         top: -40px;
-    }
-    
-    .AlramBtn {
+    } */
+    /*     .AlramBtn {
         position: relative;
         right: -3px;
+    } */
+    
+    .AlramTitle {
+        height: 22px;
+        border-radius: 5px;
+        width: 250px;
+    }
+    
+    .AlramTime {
+        width: 150px;
+        height: 24.5px;
+        border-radius: 5px;
+    }
+    
+    .SetBtn {
+        width: 41px;
+        height: 28px;
+        margin: 0px;
+        position: relative;
+        top: 0px;
     }

@@ -32,6 +32,12 @@
     right: -104px;
 }
 
+.AlramBoardTitle {
+    position: absolute;
+    top: 215px;
+    left: 515px;
+}
+
 .rain {
     background-image: url("https://wallpapercave.com/wp/wp3789068.jpg");
     background-size: cover;
