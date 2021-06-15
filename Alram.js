@@ -25,6 +25,7 @@ getAlramData: () => {
 matchingTime: () => {
     let countS=0 ;
     let countL=0 ;
+    obj = [TestName];
     if(Alram.getAlramData()!==null){
         setTime = Alram.getAlramData();
         
