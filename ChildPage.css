@@ -1,9 +1,10 @@
 body {
     background-color: green;
+    height: auto;
 }
 
 .ListBoard {
-        margin-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .ListBoard>li {
